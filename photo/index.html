@@ -17,10 +17,23 @@
   <meta name="description" content="王浩的小屋">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>标签 - Pepper&#39;s Home</title>
+  <title>RGB回忆 - Pepper&#39;s Home</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -43,7 +56,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -178,8 +191,9 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/Life/" style="font-size: 15px; color: #bbe">Life</a>
+<div class="page-content">
+  <p>test</p>
+
 </div>
 
               </div>
@@ -275,7 +289,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签&nbsp;",
+        "RGB回忆&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -289,6 +303,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
